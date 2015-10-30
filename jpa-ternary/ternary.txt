@@ -1,0 +1,3 @@
+We have a 3-way join table project2user2position with 3 columns, one for each foreign key to project, user and position.
+So a user can be in many projects, a project can have many users and for each of this combinations the user will have a
+position (Developer, analyst, etc).
