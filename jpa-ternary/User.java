@@ -48,7 +48,7 @@ public class User {
 	@Column
 	private LocalDateTime modificationTime;
 
-	@OneToMany(mappedBy = "pk.user", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "pk.user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private Set<ProjectUserPosition> projectUserPositions = new HashSet<ProjectUserPosition>();
 
 	public User() {

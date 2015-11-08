@@ -36,7 +36,7 @@ public class Project {
 	@Column
 	private LocalDateTime modificationTime;
 
-	@OneToMany(mappedBy = "pk.project", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "pk.project", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private Set<ProjectUserPosition> projectUserPositions = new HashSet<ProjectUserPosition>();
 
 	@PrePersist
